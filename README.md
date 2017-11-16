@@ -26,3 +26,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Included Packages
+
+LESS Styles - The global style sheet, and all component style sheets import the variables stles sheet located at src/assets/css/variables.less
+
+[Bootstrap 4](http://getbootstrap.com/docs/4.0/getting-started/introduction/) has bee included.  Other styles that can be included can be found at: http://getbootstrap.com/
+
+[ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/getting-started#installation-instructions) has been included.  Other styles that can be included can be found at: https://valor-software.com/ngx-bootstrap/#/
