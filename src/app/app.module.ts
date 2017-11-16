@@ -4,18 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-
-//bootstrap and other styles
-import { AlertModule } from 'ngx-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { DecksComponent } from './decks/decks.component';
+import { DeckComponent } from './deck/deck.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    DecksComponent,
+    DeckComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AlertModule.forRoot()
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
