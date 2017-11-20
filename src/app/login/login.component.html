@@ -1,3 +1,7 @@
 <p>
   login works!
 </p>
+<div>
+  <button (click)="login()" type="submit" class="btn btn-default" *ngIf="!loading">Login</button>
+  <span *ngIf="loading"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i> Loading...</span>
+</div>

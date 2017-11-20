@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  loading: boolean = false;
+
+  constructor(private toastr: ToastrService) { }
 
   ngOnInit() {
+  }
+
+  login() {
+    this.loading = true;
+    this.toastr.error("Login Failed");
   }
 
 }

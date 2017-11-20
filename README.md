@@ -36,3 +36,7 @@ LESS Styles - The global style sheet, and all component style sheets import the 
 [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/getting-started#installation-instructions) has been included.  Other styles that can be included can be found at: https://valor-software.com/ngx-bootstrap/#/
 
 The loading screen is using the [Please-Wait library](https://github.com/Pathgather/please-wait) and [SpinKit styles](http://tobiasahlin.com/spinkit/).  This is the main loading screen waiting for the app to load.
+
+[Font-Awesome](http://fontawesome.io/) styles have been included.  There are several icons that can be used.  For example, the loading spinner icon on the login page.
+
+[ngx-toastr](https://www.npmjs.com/package/ngx-toastr) messages have been included and are used to send a popup message to the user.

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,6 +13,8 @@ import { DeckComponent } from './deck/deck.component';
 
 //Bootstrap and other styles
 import { CollapseModule } from 'ngx-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,13 @@ import { CollapseModule } from 'ngx-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CollapseModule.forRoot()
+    BrowserAnimationsModule,
+    CollapseModule.forRoot(),
+    FormsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right'
+    }),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
