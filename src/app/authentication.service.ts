@@ -15,6 +15,20 @@ export class AuthenticationService {
 
   login() {
     //Not Implemented Yet
+
+    // Example of what the code should look like
+    
+    // return this._dataService.testConnection(user.username, user.password)
+    //   .map((resp: Response) => {
+    //     sessionStorage.setItem("AuthToken", base64Url.encode(user.username + ":" + user.password));
+    //     //console.log("Login Loading Success");
+    //     resp.json();
+    //   })
+    //   .catch((err: Response) => {
+    //     let details = err.json();
+    //     //console.error("Error getting results: ", details);
+    //     return Observable.throw(details);
+    //   });
   }
 
   checkCredentials() {
