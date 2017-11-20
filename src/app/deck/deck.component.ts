@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-deck',
+  providers: [AuthenticationService],
   templateUrl: './deck.component.html',
   styleUrls: ['./deck.component.less']
 })
@@ -12,7 +14,7 @@ export class DeckComponent implements OnInit {
 
   public deckId;
 
-  constructor(private _route: ActivatedRoute) { }
+  constructor(private _route: ActivatedRoute, private authService:AuthenticationService) { }
 
   ngOnInit() {
     this._route.params
@@ -20,6 +22,8 @@ export class DeckComponent implements OnInit {
       .subscribe((id) => {
           this.deckId = id;
       });
+
+    this.authService.checkCredentials();
   }
 
 }
