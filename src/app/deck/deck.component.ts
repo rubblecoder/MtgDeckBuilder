@@ -12,10 +12,10 @@ export class DeckComponent implements OnInit {
 
   public deckId;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.params
+    this._route.params
       .map((params) => params['id'])
       .subscribe((id) => {
           this.deckId = id;
