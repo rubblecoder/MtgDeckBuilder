@@ -40,3 +40,5 @@ The loading screen is using the [Please-Wait library](https://github.com/Pathgat
 [Font-Awesome](http://fontawesome.io/) styles have been included.  There are several icons that can be used.  For example, the loading spinner icon on the login page.
 
 [ngx-toastr](https://www.npmjs.com/package/ngx-toastr) messages have been included and are used to send a popup message to the user.
+
+[Angular2-Datatable](https://www.npmjs.com/package/angular2-datatable) tables have been added.

@@ -15,6 +15,7 @@ import { DeckComponent } from './deck/deck.component';
 import { CollapseModule } from 'ngx-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { DataTableModule } from 'angular2-datatable';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ToastrModule } from 'ngx-toastr';
     AppRoutingModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
+    DataTableModule,
     FormsModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'

@@ -1,3 +1,35 @@
-<p>
-  decks works!
-</p>
+<article> 
+  <table class="table table-striped" [mfData]="decks" #mf="mfDataTable" [mfRowsOnPage]="5">
+    <thead>
+      <tr>
+        <th style='width: 25%'>
+          <mfDefaultSorter by="item.name">Name</mfDefaultSorter>
+        </th>
+        <th style='width: 15%'>
+          <mfDefaultSorter by="item.color">Color</mfDefaultSorter>
+        </th>
+        <th style='width: 15%'>
+          <mfDefaultSorter by="item.type">Type</mfDefaultSorter>
+        </th>
+        <th style='width: 45%'>
+          <mfDefaultSorter by="item.desc">Description</mfDefaultSorter>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of mf.data">
+        <td><a routerLink="/deck/{{item.id}}" routerLinkActive="active">{{item.name}}</a></td>
+        <td>{{item.color}}
+        <td>{{item.type}}</td>
+        <td>{{item.desc}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">
+          <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</article>
