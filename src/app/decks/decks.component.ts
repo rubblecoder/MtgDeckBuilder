@@ -3,7 +3,7 @@ import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-decks',
-  providers: [AuthenticationService],
+  providers: [],
   templateUrl: './decks.component.html',
   styleUrls: ['./decks.component.less']
 })

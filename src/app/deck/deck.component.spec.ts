@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { DeckComponent } from './deck.component';
+import { AuthenticationService } from '../authentication.service';
 
 describe('DeckComponent', () => {
   let component: DeckComponent;
@@ -12,6 +13,7 @@ describe('DeckComponent', () => {
       imports: [
         RouterTestingModule
       ],
+      providers: [ AuthenticationService ],
       declarations: [ DeckComponent ]
     })
     .compileComponents();

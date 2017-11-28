@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { AuthenticationService } from './authentication.service';
+
 //Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -37,7 +39,7 @@ import { DataTableModule } from 'angular2-datatable';
     }),
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ AuthenticationService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -42,3 +42,7 @@ The loading screen is using the [Please-Wait library](https://github.com/Pathgat
 [ngx-toastr](https://www.npmjs.com/package/ngx-toastr) messages have been included and are used to send a popup message to the user.
 
 [Angular2-Datatable](https://www.npmjs.com/package/angular2-datatable) tables have been added.
+
+## Typescript
+
+After building the application, there was an issue with Angular 5, RxJS, and Typescript 2.4.2.  I had to upgrade to Typescript 2.6.1 to resolve an error while building the production version of the code.  This will cause a warning during the build process.  [Angular 5 production build issue](https://github.com/angular/angular/issues/20095)

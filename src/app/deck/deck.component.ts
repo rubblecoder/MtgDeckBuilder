@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-deck',
-  providers: [AuthenticationService],
+  providers: [],
   templateUrl: './deck.component.html',
   styleUrls: ['./deck.component.less']
 })

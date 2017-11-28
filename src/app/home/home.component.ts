@@ -3,7 +3,7 @@ import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-home',
-  providers: [AuthenticationService],
+  providers: [],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.less']
 })

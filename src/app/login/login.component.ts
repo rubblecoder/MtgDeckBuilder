@@ -6,7 +6,7 @@ import base64Url from 'base64url-ts2';
 
 @Component({
   selector: 'app-login',
-  providers: [AuthenticationService],
+  providers: [],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.less']
 })

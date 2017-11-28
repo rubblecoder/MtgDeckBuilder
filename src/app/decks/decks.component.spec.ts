@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 
 import { DecksComponent } from './decks.component';
+import { AuthenticationService } from '../authentication.service';
 
 import { DataTableModule } from 'angular2-datatable';
 
@@ -17,6 +18,7 @@ describe('DecksComponent', () => {
         DataTableModule,
         RouterTestingModule 
       ],
+      providers: [ AuthenticationService ],
       declarations: [ DecksComponent ]
     })
     .compileComponents();

@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login.component';
+import { AuthenticationService } from '../authentication.service';
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -19,6 +20,7 @@ describe('LoginComponent', () => {
           positionClass: 'toast-bottom-right'
         })
       ],
+      providers: [ AuthenticationService ],
       declarations: [ LoginComponent ]
     })
     .compileComponents();
